@@ -76,9 +76,9 @@ class SiteController extends Controller
     public function actionDesign()
     {
         $path = \Yii::getAlias('@app') . DIRECTORY_SEPARATOR . 'files';
-        $diseño = $path . DIRECTORY_SEPARATOR . "design_document.pdf";
+        $diseño = $path . DIRECTORY_SEPARATOR . "design-document.pdf";
         if(file_exists($diseño)){
-            return Yii::$app->response->sendFile($diseño, 'design_document.pdf');
+            return Yii::$app->response->sendFile($diseño, 'design-document.pdf');
         }
     }
 
